@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
-
 .header{
     display: grid;
     width: 100%;
@@ -190,4 +189,32 @@
 .carusel__img img{
     left: 20px;
     bottom: 20px;
+.menu{
+    background: var(--color-secundary);
+    position: fixed;
+    bottom: 0;
+    width: 100%
+
+}
+.menu ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li a i{
+    font-size: 25px;
+    color: var(--color-icon);
+}
+.menu ul li a i:hover{
+    color: var(--color-primary);
+    transition: color .3s ease-in-out;
 }
