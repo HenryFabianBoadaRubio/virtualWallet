@@ -189,6 +189,7 @@
 .carusel__img img{
     left: 20px;
     bottom: 20px;
+}
 .menu{
     background: var(--color-secundary);
     position: fixed;
