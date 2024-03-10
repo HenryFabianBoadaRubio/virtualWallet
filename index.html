@@ -11,29 +11,58 @@
     
 </head>
 <body>
+    
     <div class="banner">
-        <img src="../storage/img/banner.svg" alt="">
+        <img src="../storage/img/frame.svg" alt="">
     </div>
     <main class="profile">
         <section class="profile__balance">
             <article class="profile__titule">
-                <h3>Hi, Arthur</h3>
-                <p>here's your balance.</p>
+                <h3>Henry here's your balance</h3>
+                
             </article>
             <article class="profile__process">
                 <div class="profile__savings">
                     <small>savings</small>
+                    <progress id="savings" max="100" value="70"></progress>
                     <label for="savings"> <sub>$</sub> 15,615</label>
-                    <progress id="savings" max="100" value="80"></progress>
                 </div>
                 <div class="profile__assets">
                     <small>assets</small>
+                    <progress id="assets" max="100" value="50"></progress>
                     <label for="assets"> <sub>$</sub> 9,615</label>
-                    <progress id="assets" max="100" value="40"></progress>
                 </div>
             </article>
         </section>
-        <section class="profile__activities">
+        <div class="carrusel">
+            <div class="elemento">
+                <div class="servicios">
+                    <img src="storage/img/service1.svg" >
+                </div>
+                <div class="suppor">
+                    <h5>24/7 Access to full service customer support</h5>
+                    <p>Lorem ipsum dolor sit amet  nam est vero ex sit autem! Hic natus suscipit quaerat </p>
+                </div>
+    
+            </div>
+            <div class="elemento">
+                <div class="servicios2">
+                    <img src="storage/img/service2.svg" >
+                </div>
+                <div class="suppor">
+                    <h5>Take your first step into safe, secure crypto investing</h5>
+                    <p>Lorem ipsum dolor sit amet  nam est vero ex sit autem! Hic natus suscipit quaerat </p>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="servicios3">
+                    <img src="storage/img/galaxy.svg" >
+                    <h5>We make crypto clear and simple</h5>
+                </div>
+            </div>
+        </div>
+          
+        <!-- <section class="profile__activities">
             <section class="activities_carusel">
                 <article class="activities__title">
                     <h4>Activities</h4>
@@ -51,7 +80,7 @@
                         <i class='bx bxs-help-circle' ></i>
                         <h4>Help</h4>
                 </article>
-        </section>
+        </section> -->
         <article class="transactions">
             <div class="transactions__title">
                 <div >
@@ -222,5 +251,6 @@
         </article>
         </section>
     </main>
+    
 </body>
 </html>
