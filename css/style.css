@@ -28,7 +28,7 @@
 }
 .menu ul li a i{
     font-size: 25px;
-    color: var(--color-icon);
+    color:red;
 }
 .menu ul li a i:hover{
     color: var(--color-primary);
