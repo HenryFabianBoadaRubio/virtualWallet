@@ -6,6 +6,7 @@
     font-family: "SF-Pro-Text-Regular";
 }
 
+
 .banner{
     background: var(--color-secundary);
     position: absolute;
@@ -210,6 +211,8 @@ progress[value]::-moz-progress-bar {
     gap: 15px;
     height: 55vh;
     overflow-y: scroll;
+    background-color: var(--color-first);
+    border: 1px solid red;
 }
 
 .transactions__carucel{
@@ -222,12 +225,14 @@ progress[value]::-moz-progress-bar {
 
 .transactions__description{
     /* background: green; */
+    height:4rem ;
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 1px solid rgb(0, 174, 255);
 }
 
-.transactions__up,
+/* .transactions__up,
 .transactions__down{
     display: flex;
     justify-content: center;
@@ -238,11 +243,11 @@ progress[value]::-moz-progress-bar {
 
 .transactions__down{
     color: var(--color-secundary);
-}
+} */
 
-.transactions__description i{
+/* .transactions__description i{
     font-size: 1.8em;
-}
+} */
 
 
 
@@ -250,6 +255,7 @@ progress[value]::-moz-progress-bar {
 .transactions__value p{
     font-family: "SF-Pro-Text-Semibold";
     text-transform: capitalize;
+    color: white;
     
 }
 
@@ -258,4 +264,10 @@ progress[value]::-moz-progress-bar {
     color: var(--color-cuarto);
     font-family: "SF-Pro-Text-Light";
     text-transform: capitalize;
+}
+.transactions__value .positiv{
+    color: var(--color-green);
+}
+.transactions__value .negativ{
+    color: red;
 }
