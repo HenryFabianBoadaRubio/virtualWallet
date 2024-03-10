@@ -5,10 +5,20 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+/* body{
+   
+        margin: 0;
+        padding: 0;
+        background-image: url(/storage/img/banner.svg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Para que la imagen de fondo no se mueva al hacer scroll */
+      
 
 
 .banner{
     background: var(--color-secundary);
+    background:var(--color-first);
     position: absolute;
     z-index: -10;
 }
@@ -20,7 +30,7 @@
 }
 
 .profile{
-  
+
     display: grid;
     grid-template-columns: 1fr;
     padding: 0px;
@@ -57,10 +67,31 @@
     flex-direction: column;
     text-transform:  capitalize;
     color: var(--color-ternario);
+   
+
+    background-image: linear-gradient(to right, #e5ff00, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: cambio-color 1s infinite alternate;
+    color: #333;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 #5a6333, -1px -1px 0 #e5ff00, -1px -1px 0 #e52e71, 1px 1px 0 #ff8a00, 1px 1px 0 #e52e71;
 }
+@keyframes cambio-color {
+    from { color: #00ffaa; }
+    to { color: #f7f6f3; }
+  }
+
+
 .profile__titule h3{
-    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.5em;
     font-family: "SF-Pro-Text-Heavy.otf";
+    
 }
 
 .profile__titule p{
@@ -70,11 +101,14 @@
 
 .profile__process{
     display: flex;
+    height: 4rem;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
     color: var(--color-ternario);
+    padding:  10px;
+    
 }
 
 .profile__savings, .profile__assets{
@@ -102,15 +136,18 @@
 }
 
 .profile__savings progress[value] {
-    --color: var(--color-primary);
+    --color:rgba(255, 255, 0, 0.932);
     --background: var(--color-ternario);
     background: var(--background);
+    box-shadow: 0 0 8px 2px rgba(39, 218, 218, 0.89);
 }
 
 .profile__assets progress[value] {
-    --color: var(--color-cuarto);
     --background: var(--color-ternario);
     background: var(--background);
+    box-shadow: 0 0 8px 2px rgba(39, 218, 218, 0.89);
+    --color: rgba(255, 255, 0, 0.932);
+    
 }
 
 progress[value] {
@@ -151,7 +188,7 @@ progress[value]::-moz-progress-bar {
 
 
 
-.activities__carusel__card {
+/* .activities__carusel__card {
     width: 95vw;
     display: flex;
     flex-direction: row;
@@ -179,7 +216,7 @@ progress[value]::-moz-progress-bar {
     align-items: center;
     color: var(--color-secundary);
     margin: 15px 0;
-}
+} */
 
 .activities__carusel__img small,
 .activities__carusel__img h4 {
@@ -201,6 +238,11 @@ progress[value]::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    
+}
+.transactions__title h3{
+    color: white;
+    
 }
 
 .transactions__balance{
@@ -211,8 +253,13 @@ progress[value]::-moz-progress-bar {
     gap: 15px;
     height: 55vh;
     overflow-y: scroll;
-    background-color: var(--color-first);
-    border: 1px solid red;
+    
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin-top: 10px;
+}
+.transactions__balance h6{
+    color:var(--color-cuarto)
 }
 
 .transactions__carucel{
@@ -221,6 +268,8 @@ progress[value]::-moz-progress-bar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 8px 1px rgba(39, 218, 218, 0.89);
+
 }
 
 .transactions__description{
@@ -229,7 +278,8 @@ progress[value]::-moz-progress-bar {
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid rgb(0, 174, 255);
+   
+    /* border: 1px solid rgb(0, 174, 255); */
 }
 
 /* .transactions__up,
@@ -256,7 +306,7 @@ progress[value]::-moz-progress-bar {
     font-family: "SF-Pro-Text-Semibold";
     text-transform: capitalize;
     color: white;
-    
+
 }
 
 .transactions__description div small,
@@ -271,3 +321,94 @@ progress[value]::-moz-progress-bar {
 .transactions__value .negativ{
     color: red;
 }
+
+/* CARRUSEL SERVICIOS */
+/**************************************************/
+/************SERVICIO 1**************************************/
+.carrusel{
+    display: flex;
+    overflow-x: scroll;
+    
+}
+@keyframes desplazar {
+    0%,100% {
+      transform: translateX(0); /* Mueve el carrusel a la posición inicial */
+    }
+    50% {
+        transform: translateX(calc(-70% * 3));; /* Mueve el carrusel 3 veces el ancho de una imagen */
+    }
+}
+.elemento{
+    animation: desplazar 22s infinite linear;
+    display: flex;
+    flex: 1 0 auto;
+    margin:  10px;
+    width: 23.5rem;
+    height: 10rem;
+    background-color: var(--color-first);
+    justify-content: space-between;
+    align-items: center;
+    
+    box-shadow: 0 0 8px 5px rgba(39, 218, 218, 0.89);
+    
+
+
+}
+
+.servicios{
+    display: flex;
+    
+    height: 10rem;
+    object-fit:contain;
+    
+
+}
+.suppor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 12rem;
+    height: 10rem;
+    /* border: 2px solid green; */
+    gap: 10px;
+
+}
+.suppor h5{
+    font-size: 1.2em;
+}
+.suppor p{
+    font-size: 0.5em;
+}
+/***************SERVICIO 2***********************************/
+.servicios2{
+    display: flex;
+    height: 6.5rem;
+    object-fit: contain;
+    /* border: 2px solid red; */
+
+}
+
+/***************SERVICIO 3***********************************/
+
+.servicios3{
+    display: flex;
+    left:16%;
+    height: 10rem;
+    object-fit: scale-down;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.servicios3 h5{
+    display: flex;
+    width: 7rem;
+    height: 5rem;
+   align-items: center;
+    inset: 0;
+    margin: auto;
+    position: absolute;
+    color: white;
+    
+}
+/***********FIN CARRUSEL SERVICIOS**********************/
+
