@@ -7,6 +7,10 @@
     src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
 }
 :root{
+    --color-first:#0f111e;
+    --color-green:#00ffa3;
+    --color-primary: #00DDA3;
+    
     --color-primary: #00DDA3;
     --color-secundary: #33404F;
     --color-ternario: #fff;
