@@ -1,19 +1,40 @@
 @font-face {
     font-family: "SF-Pro-Text-Regular";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
+    src: url(/storage/fuentes/Roboto_Slab/RobotoSlab-Regular.ttf);
 }
 @font-face {
     font-family: "SF-Pro-Text-Bold";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
+    src: url(/storage/fuentes/Roboto_Slab/RobotoSlab-Light.ttf);
+}
+/* @font-face {
+    font-family: "SF-Pro-Text-Semibold";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Semibold.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Heavy.otf";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Heavy.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Light.otf";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf);
+} */
+
+@font-face {
+    font-family: robotof;
+    src: url(/storage/fuentes/Roboto_Slab/RobotoSlab-Black.ttf);
+}
+@font-face {
+    font-family: roboflaquito;
+    src: url(/storage/fuentes/Roboto_Slab/RobotoSlab-Bold.ttf);
 }
 :root{
     --color-first:#0f111e;
     --color-green:#00ffa3;
     --color-primary: #00DDA3;
     
-    --color-primary: #00DDA3;
     --color-secundary: #33404F;
     --color-ternario: #fff;
-    --color-shado-tranparent: 0px 0px 10px rgba(0, 0, 0, 0.216);
-    --color-icon:#ffffff;
+    --color-cuarto:#B5C5C3;
+    --color-cuaternario:gray;
+    --color-shadow-transparent:0px 0px 10px rgba(0, 0, 0, 0.216)
 }
