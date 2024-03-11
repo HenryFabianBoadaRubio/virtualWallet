@@ -5,6 +5,14 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+.cabeza{
+   
+    background-image: url('/storage/img/Frame.svg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+    background-attachment: fixed; /* Para que la imagen no se desplace al hacer scroll */
+    
+}
 .header{
     display: grid;
     width: 100%;
