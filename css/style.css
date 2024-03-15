@@ -16,7 +16,7 @@
 
 .banner img{
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     object-fit: cover;
 }
 .header{
@@ -159,10 +159,10 @@
 }
 .grafic{
     display: flex;
-    margin-top: 1.8rem;
+    /* margin-top: 1.8rem; */
    
     width: 100%;
-    height: 80%;
+    height: 40vh;
 }
 .grafic img{
     width: 90%;
@@ -255,6 +255,7 @@
     margin: 0 20px;
     width: 20rem;
     height: 10rem;
+    overflow-y: hidden;
     
     flex-direction: row;
     justify-content: space-evenly;
@@ -739,6 +740,7 @@ progress[value]::-moz-progress-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
     
 
 }
